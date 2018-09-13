@@ -1,3 +1,6 @@
+# Compiled binary file
+*.exe
+
 # Compiled class file
 *.class
 
