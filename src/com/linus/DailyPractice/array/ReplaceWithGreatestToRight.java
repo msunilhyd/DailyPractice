@@ -1,3 +1,6 @@
+
+//Program Stmt = Given an Array, replace the element at index i with the greatest element towards its right hand side.
+
 package com.linus.DailyPractice.array;
 
 public class ReplaceWithGreatestToRight 
