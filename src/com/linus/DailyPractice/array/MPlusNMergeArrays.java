@@ -1,5 +1,8 @@
 package com.linus.DailyPractice.array;
 
+//  Program Stmt = Given 2 sorted arrays one of size m + n whose n elementars are -1
+//  and the other of size n, merge them into the m+n sized array.
+
 import java.util.Arrays;
 
 public class MPlusNMergeArrays 
