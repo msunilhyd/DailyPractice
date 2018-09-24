@@ -1,0 +1,10 @@
+HTTP Protocol : 
+
+1. Similar to other protocols as SMTP and FTP, but there is one fundamental difference : 
+   HTTP is a stateless protocol. which means  that http supports only one request per connection.
+   This means the client connects to the server to send one request and then disconnects.
+   This mechanism allows more users to connect to the server over a period of time.
+   
+ 2. The client sends a HTTP request and the server answers with an HTML page to the client, using HTTP.
+ 3. POST is used to CREATE and PUT is used to update.
+ 4. Calls to PUT are idempotent. Sending the same POST requests twice creates 2 resources.
