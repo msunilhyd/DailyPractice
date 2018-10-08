@@ -5,17 +5,20 @@ public class Vocab
 	public static void main(String[] args) 
 	{
 		int count = 0;
-		
-		for(WordUbiquitous word : WordUbiquitous.values())
+
+		for(VocabUbiquitous word : VocabUbiquitous.values())
 		{
 			count = count +1;
+		}
+		for(VocabScrupulous word : VocabScrupulous.values())
+		{
+			count = count + 1;
 		}
 		System.out.println("Total number of vacab is : " + count);
 	}
 }
 
-
-enum WordUbiquitous
+enum VocabUbiquitous
 {
 	Ubiquitous,
 	Impeccable,
@@ -36,12 +39,39 @@ enum WordUbiquitous
 	Eloquent,
 	Vitiate,
 	Sumptuous,
-	Belligerent,
+	Belligerent;	
 }
 
-enum WordSetScrupulous
+enum VocabScrupulous
 {
 	Scrupulous,
 	Implore,
-	Reprimand;	
+	Reprimand,	
+	Tepid,
+	Beckon,
+	Upcycle,
+	Spectre,
+	Epoch,
+	Fervour,
+	Chivalrous,
+	Philistine,
+	Slothful,
+	Indolence,
+	Antiquated,
+	Ossify,
+	Chagrin,
+	Zealot,
+	Laudable,
+	Idyllic,
+	Motley;
+}
+
+enum Unconscionable
+{
+	Unconscionable,
+	Asunder,
+	Nether,
+	Subsistence,
+	Fetter,
+	Viscissitudes;
 }
