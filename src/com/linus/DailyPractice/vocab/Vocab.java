@@ -73,5 +73,10 @@ enum Unconscionable
 	Nether,
 	Subsistence,
 	Fetter,
-	Viscissitudes;
+	Viscissitudes,
+	Incisicve,
+	Contentious,
+	Scathing,
+	Malevolent,
+	Coercion;
 }
