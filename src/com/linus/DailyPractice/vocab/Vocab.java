@@ -77,6 +77,6 @@ enum Unconscionable
 	Incisicve,
 	Contentious,
 	Scathing,
-	Malevolent,
-	Coercion;
+	Coercion,
+	Malevolent;
 }
