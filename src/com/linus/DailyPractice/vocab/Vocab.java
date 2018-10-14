@@ -78,5 +78,7 @@ enum Unconscionable
 	Contentious,
 	Scathing,
 	Coercion,
-	Malevolent;
+	Malevolent,
+	Squander,
+	Tottering;
 }
