@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-public class LinkedProperties extends Properties{
+public class LinkedPropertiesVocab extends Properties{
     private static final long serialVersionUID = 1L;
 
     private Map<Object, Object> linkMap = new LinkedHashMap<Object,Object>();
@@ -84,7 +84,7 @@ public class LinkedProperties extends Properties{
 		String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
 		String vocabConfigPath = rootPath + "vocab";
 
-		LinkedProperties vocabProps = new LinkedProperties();
+		LinkedPropertiesVocab vocabProps = new LinkedPropertiesVocab();
 		vocabProps.load(new FileInputStream(vocabConfigPath));
 		int count = 0;
 
