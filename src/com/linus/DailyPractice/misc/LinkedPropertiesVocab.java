@@ -97,8 +97,8 @@ public class LinkedPropertiesVocab extends Properties{
 			{
 				if(count % 20 == 0)
 				{
-					//System.out.println("///////////////// Set " + e.getKey() );
 					System.out.println();
+					//System.out.println("///////////////// Set " + e.getKey() );
 					System.out.println("///////////////// Set " + e.getKey() + " : " +  e.getValue());
 					System.out.println();
 

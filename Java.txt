@@ -1,0 +1,41 @@
+
+Maps : 
+
+1.Diff between HashMap and LinkedHashMap
+   = LinkedHashMap maintains the insertion order of the entries. HashMap does not.
+
+2.Diff between HashMap and HashTable
+	= HashTable is synchronised and does not allow null keys or values.
+	  HashMap allows one null key and any number of null values.
+
+3.Diff between HashMap and TreeMap
+	= TreeMap does not use Hashing to store objects but Red Black Trees.
+	  Keys in TreeMap are always sorted.
+
+4. Diff between ArrayList and LinkedList
+	= ArrayList stores objects using the array data structure. Linked List stores the objects in a doubly linked list.
+	  Generally it is preferred to use ArrayList over LinkedList due to the cost reductions of operations by ArrayList.
+
+
+Object Class in Java :
+	Object class is in java.lang package and it sits on the top of the class hierarchy tree.
+	Some methods that are inherited from the object class are :
+	1.protected object clone() = creates and returns a copy of the object.
+	2.public boolen equals() = returns true if this object is equal to some other object.
+	3.protected void finalize() = is called by the garbage collector when it determines that there are no more 
+		references to this object.
+	4.public final Class getClass() = returns the runtime class of the object.
+	5.public int hashCode() = returns the hashCode value of the object.
+	6.public String toString() = returns the string representation of the object.
+	7.notify(), notifyAll(), wait(), wait(long timeOut), wait(long timeOut, int nanos)
+
+Mock static methods : http://www.jramoyo.com/2013/03/static-methods-and-unit-testing.html
+
+Spring IOC : https://www.zoltanraffai.com/blog/different-dependency-injection-techniques/
+
+OOPS:
+1.Abstraction = Hiding the details of the implementation from the user. Ex : A Java program as it converts complex instructions 
+				into machine code.
+				It can be achieved through inheritance.
+
+2.
