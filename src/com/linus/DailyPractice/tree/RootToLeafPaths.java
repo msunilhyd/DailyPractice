@@ -20,6 +20,7 @@ public class RootToLeafPaths
 		rootRight.setLeft(rLeft);
 		rootRight.setRight(rRight);
 		
+		
 		int[] path = new int[1000];
 		printRootToLeafPaths(root, path, 0);
 	}

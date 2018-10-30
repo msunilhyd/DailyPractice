@@ -10,6 +10,7 @@ public class BSTOrNot
 		root.setLeft(rootLeft);
 		root.setRight(rootRight);
 		
+		
 		Node lLeft = new Node(8);
 		Node lRight = new Node(13);
 		rootLeft.setLeft(lLeft);

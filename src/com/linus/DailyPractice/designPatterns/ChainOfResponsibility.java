@@ -8,6 +8,7 @@ public class ChainOfResponsibility
 		private static final int DEBUG = 2;
 		private static final int ERROR = 3;
 		
+		
 		private int LEVEL;
 		
 		// next element in the Chain of Responsibility.
