@@ -16,13 +16,13 @@ public class SpiralTraversal
 			// Print the first row from the remaining rows
 			for(i=l;i<n;i++)
 			{
-				System.out.print(arr[k][i] + " ");
+				System.out.print(arr[k][i] + ", ");
 			}
 			k++;
 			// Print the last column from the remaining columns
 			for(i=k;i<m;i++)
 			{
-				System.out.println(arr[i][n-1]);
+				System.out.print(arr[i][n-1] + ", ");
 			}
 			n--;
 			// Print the last row from the remaining rows
@@ -30,7 +30,7 @@ public class SpiralTraversal
 			{
 				for(i=n-1; i>=l;i--)
 				{
-					System.out.print(arr[m-1][i]);
+					System.out.print(arr[m-1][i] + ", ");
 				}
 				m--;
 			}
@@ -39,7 +39,7 @@ public class SpiralTraversal
 			{
 				for(i=m-1;i>=k;i--)
 				{
-					System.out.print(arr[i][l]);
+					System.out.print(arr[i][l] + ", ");
 				}
 				l++;
 			}

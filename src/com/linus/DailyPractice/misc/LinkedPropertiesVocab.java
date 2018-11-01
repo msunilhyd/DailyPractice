@@ -88,21 +88,21 @@ public class LinkedPropertiesVocab extends Properties{
 		vocabProps.load(new FileInputStream(vocabConfigPath));
 		int count = 0;
 
-		int setOf20s = 0;
+		int setOf4s = 0;
 		if(!vocabProps.isEmpty())
 		{
 			Collection<Object> entryMap = vocabProps.linkMap.values();
 			
 			for(Map.Entry<Object, Object> e : vocabProps.linkMap.entrySet())
 			{
-				if(count % 20 == 0)
+				if(count % 4 == 0)
 				{
 					System.out.println();
 					//System.out.println("///////////////// Set " + e.getKey() );
 					System.out.println("///////////////// Set " + e.getKey() + " : " +  e.getValue());
 					System.out.println();
 
-					setOf20s += 1;
+					setOf4s += 1;
 				}
 				System.out.println(e.getKey() + " : " + e.getValue());
 				count += 1;
@@ -110,7 +110,7 @@ public class LinkedPropertiesVocab extends Properties{
 		}
 		
 		System.out.println("Total vocab count is : " + count);
-		System.out.println("No : of sets is  : " + setOf20s);
+		System.out.println("No : of sets is  : " + setOf4s);
 		
     }
 }

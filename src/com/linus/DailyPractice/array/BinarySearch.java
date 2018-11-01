@@ -26,7 +26,6 @@ public class BinarySearch
 
 	public int returnIdxOfNum(int low, int high)
 	{
-		
 		if(low <= high)
 		{
 			int mid = (low + high)/2;
@@ -35,9 +34,9 @@ public class BinarySearch
 				return mid;
 			}
 			if(dataArr[mid] < num)
-				returnIdxOfNum(mid, high);
+				return returnIdxOfNum(mid+1, high);
 			else
-				returnIdxOfNum(low, mid);
+				return returnIdxOfNum(low, mid-1);
 		}
 		return -1;
 	}
@@ -47,7 +46,7 @@ public class BinarySearch
 		BinarySearch binarySearch = new BinarySearch();
 		int[] arr = {2,5,10,15,25,30,192};
 		binarySearch.setDataArr(arr);
-		binarySearch.setNum(5);
+		binarySearch.setNum(30);
 		System.out.println(binarySearch.returnIdxOfNum(0, binarySearch.getDataArr().length - 1));
 	}
 }
