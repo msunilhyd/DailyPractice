@@ -7,7 +7,7 @@ public class SubArrSumK
 {
 	public static void main(String[] args) 
 	{
-		int[] arr = {1,1,1,1,1};
+		int[] arr = {1,1,1};
 		Map<Integer, Integer> preSumMap = new HashMap<>();
 		int sum = 0;
 		int result = 0;

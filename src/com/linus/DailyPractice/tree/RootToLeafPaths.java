@@ -22,13 +22,16 @@ public class RootToLeafPaths
 		
 		
 		int[] path = new int[1000];
-		printRootToLeafPaths(root, path, 0);
+		int max = 0;
+		System.out.println("Max Root to Leaf Sum is : " + printRootToLeafPaths(root, path, 0, max));
+		
 	}
 	
-	public static void printRootToLeafPaths(Node node, int path[], int pathLength)
+	
+	public static int printRootToLeafPaths(Node node, int path[], int pathLength, int max)
 	{
 		if(node == null)
-			return;
+			return 0;
 		else
 		{
 			path[pathLength] = node.getData();
@@ -36,13 +39,25 @@ public class RootToLeafPaths
 			if(node.left == null && node.right == null)
 			{
 				printPath(path, pathLength);
+				int curSum = 0;
+				for(int i=0;i<=pathLength;i++)
+				{
+					curSum+= path[i];
+				}
+				if(curSum > max)
+					max = curSum;
 			}
 			else
 			{
-				printRootToLeafPaths(node.left, path, pathLength);
-				printRootToLeafPaths(node.right, path, pathLength);
+				int i = printRootToLeafPaths(node.left, path, pathLength, max);
+				int j = printRootToLeafPaths(node.right, path, pathLength, max);
+				if(i>j)
+					return i;
+				else
+					return j;
 			}
 		}
+		return max;
 	}
 	
 	public static void printPath(int[] path, int len)

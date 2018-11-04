@@ -4,7 +4,7 @@ public class IndexOfElemInRotatedSortedArr
 {
 	public static void main(String[] args) 
 	{
-		int[] arr = {};
+		int[] arr = {7,8,9,4,5,6};
 		int pivot = findPivot(arr, 0, arr.length-1);
 		int n = 8;
 		System.out.println("Pivot is at :" + pivot);
@@ -16,6 +16,7 @@ public class IndexOfElemInRotatedSortedArr
 				System.out.println("Index of " + n +"is : " + binarySearchForIndex(arr, pivot, arr.length-1, n));
 		}
 	}
+	
 	
 	private static int findPivot(int[] arr, int low, int high)
 	{
@@ -30,9 +31,9 @@ public class IndexOfElemInRotatedSortedArr
 		while(low <= high)
 		{
 			if(arr[low] <= arr[mid])
-				return findPivot(arr, mid, high);
+				return findPivot(arr, mid+1, high);
 			else
-				return findPivot(arr, low, mid-1);
+				return findPivot(arr, low, mid);
 		}
 		return -1;
 	}
