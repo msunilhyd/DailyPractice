@@ -12,7 +12,6 @@ public class LongestCommonSubString {
 	
 		List<String> subStrList = giveListOfCommonSubstrings(s1, s2);
 		System.out.println(Arrays.toString(subStrList.toArray()));
-		
 	}
 	
 	private static List<String> giveListOfCommonSubstrings(String s1, String s2)
