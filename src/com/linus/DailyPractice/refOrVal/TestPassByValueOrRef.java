@@ -19,7 +19,6 @@ public class TestPassByValueOrRef
 	}
 }
 
-
 class Pizza
 {
 	String name;

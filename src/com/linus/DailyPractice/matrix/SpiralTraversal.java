@@ -10,7 +10,7 @@ public class SpiralTraversal
 		// l = starting col index
 		// n = ending col index
 		// i = iterator
-		
+	
 		while(k<m && l <n)
 		{
 			// Print the first row from the remaining rows

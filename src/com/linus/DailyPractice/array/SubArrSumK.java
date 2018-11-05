@@ -32,4 +32,5 @@ public class SubArrSumK
 		}
 		System.out.println("No:of SubArrays is : " + result);
 	}
+	
 }

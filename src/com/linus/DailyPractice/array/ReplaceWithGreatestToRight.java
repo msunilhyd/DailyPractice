@@ -15,6 +15,7 @@ public class ReplaceWithGreatestToRight
 		this.dataArr = dataArr;
 	}
 	
+	
 	public void printArr() 
 	{
 		for(int i=0;i<dataArr.length;i++)

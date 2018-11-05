@@ -16,9 +16,10 @@ public class PrintMatrix
 		findCommonElement(mat);
 	}
 	
+
 	private static void findCommonElement(int[][] mat)
 	{
-		ArrayList<Integer> commRowArr = new ArrayList<>(); // storing the row index in which there is the min element
+		ArrayList<Integer> commRowArr = new ArrayList<>(); // storing the col index in which there is the min element
 
 		int min = mat[0][3];
 		int count = 1;
