@@ -21,6 +21,7 @@ public class RootToLeafPaths
 		rootRight.setRight(rRight);
 		
 		
+		
 		int[] path = new int[1000];
 		int max = 0;
 		System.out.println("Max Root to Leaf Sum is : " + printRootToLeafPaths(root, path, 0, max));
@@ -46,6 +47,7 @@ public class RootToLeafPaths
 				}
 				if(curSum > max)
 					max = curSum;
+				System.out.println("Current Max Sum is : " + max);
 			}
 			else
 			{

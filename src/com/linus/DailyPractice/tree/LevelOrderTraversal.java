@@ -43,7 +43,7 @@ public class LevelOrderTraversal
 			return;
 		LinkedList<Node> queue = new LinkedList<>();
 		queue.add(root);
-		
+
 		while(!queue.isEmpty())
 		{
 			Node node = queue.poll();
