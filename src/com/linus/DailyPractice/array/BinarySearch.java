@@ -7,7 +7,7 @@ public class BinarySearch
 {
 	private int[] dataArr;
 	private int num;
-
+	
 	public int getNum() {
 		return num;
 	}

@@ -18,6 +18,7 @@ public class IndexOfElemInRotatedSortedArr
 	}
 	
 	
+	
 	private static int findPivot(int[] arr, int low, int high)
 	{
 		if(arr.length <= 1)

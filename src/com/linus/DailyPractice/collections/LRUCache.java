@@ -12,6 +12,7 @@ public class LRUCache<K, V> extends LinkedHashMap<K, V>{
 		super(size, 0.75f, true);
 		this.size = size;
 	}
+	
 	/*
 	@Override
 	protected boolean removeEldestEntry(java.util.Map.Entry<K, V> eldest) {

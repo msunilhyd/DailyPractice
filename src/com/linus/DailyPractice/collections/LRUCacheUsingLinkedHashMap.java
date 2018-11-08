@@ -14,6 +14,7 @@ public class LRUCacheUsingLinkedHashMap
 		Employee e5 = new Employee(5009, "Sean", "sean@infotech.com", 80000.00);
 		
 
+		
 		Department d1 = new Department(10001, "IT", "Boston");
 		Department d2 = new Department(10002, "Finance", "Chennai");
 		

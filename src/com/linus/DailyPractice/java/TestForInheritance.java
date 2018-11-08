@@ -4,9 +4,18 @@ public class TestForInheritance {
 
 	public static void main(String[] args) {
 	
-		Vehicle v = new Car();
+		Vehicle v = new Vehicle();
+		v.goo();
+		
+		Vehicle v2 = new Car();
+		
+		v2.goo();
+		
 		Vehicle v1 = null;
-		v1.m1();
+		
+		v1.foo();
+		
+		//v1.m1();
 		//v.painting(); 	// compile time error because the parent ref v 
 						// does not have the child's extra methods
 		
@@ -25,13 +34,33 @@ class Vehicle
 	public void m1() {
 		System.out.println("Servicing Vehile");
 	}
+	
+	public static void foo()
+	{
+		System.out.println("Vehicle");
+	}
+	
+	public void goo()
+	{
+		System.out.println("Vehicle");
+	}
 }
 
 class Car extends Vehicle
 {
+	@Override
+	public void goo() {
+		System.out.println("Car");
+	}
+	
 	public void m1() {
 		
 		System.out.println("Servicing Car");
+	}
+
+	public static void foo()
+	{
+		System.out.println("Vehicle");
 	}
 	
 	public void painting()
